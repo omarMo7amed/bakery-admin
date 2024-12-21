@@ -1,0 +1,98 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    #fbe8a6,
+    #f4c2b2
+  ); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.login-container {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-container:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background-image: url("https://img.icons8.com/ios/452/cake.png"); /* Fun bakery icon */
+  background-size: cover;
+  opacity: 0.1;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #d86b3c; 
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select,
+button {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 1px solid #f3c5c1; 
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #d86b3c;
+  box-shadow: 0 0 10px rgba(216, 107, 60, 0.5);
+  outline: none;
+}
+
+button {
+  background-color: #d86b3c;  
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #c45829; 
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.error {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
